@@ -28,8 +28,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation project(':annotation-lib')
-    //这个库只在编译时用，所以应该用annotationProcessor（apt停止更新，用google的这个来代替）
-    //如果这里用implementation也可以，只不过是最后会被打包到apk
     annotationProcessor project(':annotation-compile')
     implementation project(':butterknifelib')
 }

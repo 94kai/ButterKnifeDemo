@@ -27,8 +27,7 @@ public @interface BindView {
 ```
 dependencies {
     ...
-    //这个库只在编译时用，所以应该用annotationProcessor（apt停止更新，用google的这个来代替）
-    //如果这里用implementation也可以，只不过是最后会被打包到apk
+    //(apt停止更新，用google的这个来代替）
     annotationProcessor project(':annotation-compile')
 }
 ```
